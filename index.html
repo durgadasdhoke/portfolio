@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body{
+        background: url(./images/star.jpg);
+      }
+        .mainContent{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .banner{
+            background-image: url(./images/star.jpg);
+            height: 500px;
+            margin: 20px;
+            padding: 20px;
+            color: white;
+            text-shadow:white 2px 2px 10px;
+            text-align: center;
+            animation: exam infinite 4s;
+            font-size: 100px;
+        }
+        h1{
+          font-size: 4rem;
+        }
+        pre{
+            font-size: 50px;
+        }
+        #star{
+          animation: rotates infinite 5s;
+        }
+        @keyframes exam {
+            100%{
+                text-shadow:green 5px 5px 50px;
+            }
+            75%{
+                text-shadow:pink 2px 2px 10px;
+            }
+            50%{
+                text-shadow:blue 2px 2px 10px;
+            }
+            25%{
+                text-shadow:pink 2px 2px 20px;
+            }
+            0%{
+                text-shadow:white 2px 2px 10px;
+               
+            }
+            
+        }
+        /* @keyframes rotates{
+          100%{
+            transform: rotate(90);
+          }
+          50%{
+            transform: scale(2);
+          }
+          0%{
+            transform: scale(1);
+          }
+        } */
+        @media only screen and (max-width: 500px) {
+            body {
+              background-color: lightblue;
+            }
+             .banner{
+              width: 100vw;
+            }
+          }
+        Nav{
+          background-color: transparent;
+          margin-top: 10px;
+        }
+        iframe{
+          height: 500px;
+          scrollbar-width: none;
+          overflow: hidden;
+          border-radius: 20px;
+          filter: opacity(.5);
+        }
+        /* iframe::-webkit-scrollbar {
+            display: none;
+        
+          } */
+          iframe:hover{
+            transform: scale(1.1);
+            transition:all .5s ease-in-out;
+            cursor: pointer;
+            border: 5px solid white;
+            filter: opacity(1);
+          }
+          .projectRibben{
+            margin-top: 30px;
+          }
+          .socialImg{
+            width: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            filter: opacity(.5);
+          }
+          .socialImg:hover{
+            filter: opacity(1);
+          }
+          .visitBtn{
+            background: none;
+            border: none;
+          }
+          .footer{
+            height: 400px;
+          }
+          
+
+    </style>
+  </head>
+  <body class="container" data-bs-theme="dark">
+    <!-- NavBar starts Here -->
+ 
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            
+             
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- NavBar ends Here -->
+
+<!-- Main content starts here -->
+<div class="container">
+      <div class="container justify-content-center ">
+        <div class="banner display-1 justify-content-center ">
+            <h1>Hello, </h1>
+            <h1>My Name is Das</h1>
+            <h1>and I am a MERN stack </h1>
+            <h1>Developer</h1>
+            <h1><a href="https://www.linkedin.com/in/dasdhoke/"><img class="socialImg" src="./images/LinkedInIcon.png" alt=""></a><a href="https://github.com/durgadasdhoke"><img class="socialImg" src="./images/githubIcon.png" alt=""></a></h1>
+
+            <!-- <pre>My Name is Das 
+         and I am a MERN stack 
+                        Developer
+            </pre> -->
+        </div>
+        <!-- <img src="./star.jpg" id="star" alt=""> -->
+        <div class="projectRibben">
+     
+            <iframe scrolling="no" src="https://durgadasdhoke.github.io/bankingtrainer/" frameborder="0"></iframe>
+            <iframe scrolling="no"src="https://joyful-klepon-7baa0b.netlify.app/" frameborder="0"></iframe>
+            <iframe scrolling="no" src="https://rojgar-com.vercel.app/" frameborder="0"></iframe>
+            <iframe scrolling="no" src="https://vdochat-wz5d.vercel.app/lobby.html" frameborder="0"></iframe>
+            <iframe scrolling="no" src="https://fascinating-strudel-f5557d.netlify.app" frameborder="0"></iframe>
+            <iframe scrolling="no" src="https://enchanting-nougat-8ed0f7.netlify.app/" frameborder="0"></iframe>
+            <iframe scrolling="no" src="https://durgadasdhoke.github.io/basic/" frameborder="0"></iframe>
+            <iframe scrolling="no" src="https://github.com/durgadasdhoke" frameborder="0"></iframe>
+        </div>
+        Live Links
+        <div class="projectList d-flex justify-content-around">
+          <a href="https://durgadasdhoke.github.io/bankingtrainer/">BankingTrainer</a>
+          <a href="https://joyful-klepon-7baa0b.netlify.app/">Tic-Tac-Toe</a>
+          <a href="https://rojgar-com.vercel.app/">Worker.com</a>
+          <a href="https://vdochat-wz5d.vercel.app/lobby.html">Video Calling</a>
+          <a href="https://fascinating-strudel-f5557d.netlify.app">TODO list</a>
+          <a href="https://enchanting-nougat-8ed0f7.netlify.app/">Chat App</a>
+          <a href="https://durgadasdhoke.github.io/basic/">Zomamo</a>
+          <a href="https://github.com/durgadasdhoke">Others</a>
+          
+        </div>
+      </div>
+      <!-- Main Container ends here -->
+      <!-- Footer start here -->
+      <div class="container footer">
+        <h1>Footer</h1>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
